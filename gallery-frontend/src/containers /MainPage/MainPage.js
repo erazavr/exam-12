@@ -55,8 +55,8 @@ class MainPage extends Component {
                                 <Card className='mb-3'>
                                     <CardImg style={{cursor: 'pointer'}} top width="100%" id={photo.image} onClick={this.showPhoto} src={`${apiURL}/uploads/${photo.image}`} alt="Card image cap" />
                                     <CardBody>
-                                        <CardTitle id={photo.image} onClick={this.showPhoto} style={{cursor: 'pointer'}}>{photo.title}</CardTitle>
-                                        <CardText >By: <NavLink to={`/view/${photo.user._id}`} >{photo.user.facebookId ? photo.user.firstName : photo.user.username}</NavLink></CardText>
+                                        <CardTitle id={photo.image} onClick={this.showPhoto} style={{cursor: 'pointer'}}><b>{photo.title}</b></CardTitle>
+                                        <CardText ><b>От</b>: <NavLink to={`/view/${photo.user._id}`} >{photo.user.facebookId ? photo.user.firstName : photo.user.username}</NavLink></CardText>
                                     </CardBody>
                                 </Card>
                             </Col>
