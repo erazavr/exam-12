@@ -88,7 +88,7 @@ class ViewPhotos extends Component {
                                     <Card >
                                         <CardImg id={photo.image} style={{cursor: 'pointer'}} onClick={this.showPhoto} top width="100%" src={`${apiURL}/uploads/${photo.image}`} alt="Card image cap" />
                                         <CardBody>
-                                            <CardTitle id={photo.image} style={{cursor: 'pointer'}} onClick={this.showPhoto}><b>{photo.title}</b></CardTitle>
+                                            <CardTitle style={{cursor: 'pointer'}} ><b id={photo.image} onClick={this.showPhoto}>{photo.title}</b></CardTitle>
                                         </CardBody>
                                         {this.props.user && photo.user._id === this.props.user._id && <Button style={{borderRadius: '0'}} color='danger' onClick={() => this.props.deletePhoto(photo._id)}>Удалить</Button>}
                                     </Card>
