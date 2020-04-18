@@ -48,9 +48,9 @@ class ViewPhotos extends Component {
     method = () => {
         if (this.props.userById) {
                 if (this.props.userById.facebookId) {
-                    return <h2 className='mb-5'>Галлерея {this.props.userById.firstName}</h2>
+                    return <h2 className='mb-5'>Галерея {this.props.userById.firstName}</h2>
                 } else {
-                    return <h2 className='mb-5'>Галлерея {this.props.userById.username}</h2>
+                    return <h2 className='mb-5'>Галерея {this.props.userById.username}</h2>
                 }
             };
         };
